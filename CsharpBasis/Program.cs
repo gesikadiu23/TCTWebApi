@@ -2,9 +2,3 @@
 Console.WriteLine("Hello, World!");
 
 
-//Test
-
-int shuma (int x, int y)
-{
-    return x + y;
-}
