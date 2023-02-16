@@ -5,7 +5,7 @@ Console.WriteLine("Hello, World!");
 
 int a;
 
-FunksioneMeArrayDheLista instanca = new FunksioneMeArrayDheLista();
+FunksioneMeArray instanca = new FunksioneMeArray();
 
 
 Console.WriteLine("Ju lutem jepni nje array me int :");
@@ -18,6 +18,17 @@ n = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[n];
 
 
+//array[0]
+//..
+//..
+//array[4]
+
+
+// vlera e elementit te array = array[i]
+// poz i nje elementi ne array i
+
+
+// kemi nje array me n elemente boshe
 
 // Kemi mbushur arrayn me elemente
 for(int i = 0; i < n; i++)
@@ -26,6 +37,8 @@ for(int i = 0; i < n; i++)
     array[i] = Convert.ToInt32(Console.ReadLine());
 }
 
+
+// kemi nje array te mbushur me elemente
 
 
 

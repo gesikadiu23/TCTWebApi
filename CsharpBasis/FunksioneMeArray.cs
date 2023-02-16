@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace CsharpBasis
 {
-    internal class FunksioneMeArrayDheLista
-    {
+    internal class FunksioneMeArray
+    { 
+
         public int GjejMeTeMadhin(int[] array) {
 
             int max = 0;
