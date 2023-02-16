@@ -53,8 +53,18 @@ Console.WriteLine("Shuma cift: " + shumaCift);
 
 
 
-List<int> listeMeInteger = new List<int>();
+List<int> listeMeInteger = new List<int>() { 10, 32, 43, -3, 4, -41, 4, 413, -11};
+List<string> listeMeString = new List<string>() { "test", "abc", "developer" };
 
+
+FunksioneMeLista instanceFunksioneMeLista = new FunksioneMeLista();
+
+Console.WriteLine(instanceFunksioneMeLista.GjejMeTeMadhinNeListe(listeMeInteger));
+instanceFunksioneMeLista.GjejShumenEListes(listeMeInteger);
+instanceFunksioneMeLista.KtheElementetTek(listeMeInteger);
+instanceFunksioneMeLista.GjejShumenCiftNeListe(listeMeInteger);
+instanceFunksioneMeLista.GjejSasineEElementevePozitiv(listeMeInteger);
+instanceFunksioneMeLista.KonvertoUppercase(listeMeString);
 
 
 
