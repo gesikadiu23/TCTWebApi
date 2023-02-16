@@ -53,3 +53,13 @@ Console.WriteLine("Shuma cift: " + shumaCift);
 
 
 
+List<int> listeMeInteger = new List<int>();
+
+
+
+
+
+
+
+
+
