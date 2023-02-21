@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CsharpBasis
+namespace CsharpBasis.Test
 {
     internal class FunksioneMeArray
-    { 
+    {
 
-        public int GjejMeTeMadhin(int[] array) {
+        public int GjejMeTeMadhin(int[] array)
+        {
 
             int max = 0;
 
@@ -21,11 +22,12 @@ namespace CsharpBasis
             return max;
         }
 
-        public int GjejShumenEArray(int[] array) {
+        public int GjejShumenEArray(int[] array)
+        {
 
             int sum = 0;
 
-            foreach(int item in array)
+            foreach (int item in array)
             {
                 sum = sum + item;
             }
@@ -37,9 +39,9 @@ namespace CsharpBasis
         {
             int sum = 0;
 
-            foreach(int item in array)
+            foreach (int item in array)
             {
-                if(item % 2 == 0)
+                if (item % 2 == 0)
                 {
                     sum = sum + item;
                 }
