@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CsharpBasis.Test
 {
-    internal class FunksioneMeLista
+    internal abstract class FunksioneMeLista
     {
 
         /// <summary>
@@ -88,6 +88,56 @@ namespace CsharpBasis.Test
 
             return lista.Where(a => a > 0 && a % 2 == 0).ToList();
         }
+
+
+        public static List<int> ListOfMultiples(int number, int length)
+        {
+            
+            List<int> lista = new List<int>();
+
+            for (int i = 1; i <= length; i++)
+            {
+               lista.Add(number * i);
+            }
+
+            return lista;
+        }
+
+
+        public static List<int> IndexOfCapitals(string fjala)
+        {
+            List<int> indekset = new List<int>();
+
+            for (int i = 0; i < fjala.Length; i++)
+            {
+                if (char.IsUpper(fjala[i]))
+                {
+                    indekset.Add(i);
+                }
+            }
+
+            return indekset;
+
+        }
+
+
+        public static string FindLettersInString(string fjala)
+        {
+            List<char> germat = new List<char>();
+
+            //Iterim me cikel foreach
+
+            foreach(char c in fjala)
+            {
+                if (char.IsLetter(c))
+                {
+                    germat.Add(c);
+                }
+            }
+
+            return germat.ToString();
+        }
+
 
 
     }   // ndertoni nje funksion qe merr si input nje liste

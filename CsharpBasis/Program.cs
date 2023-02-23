@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using CsharpBasis.Helpers;
 using CsharpBasis.Models;
+using CsharpBasis.Test;
 
 //Console.WriteLine("Hello, World!");
 
@@ -89,39 +90,27 @@ using CsharpBasis.Models;
 
 
 
-Person p = new Person();
-
-p.Age = 10;
-p.Name = "John";
-p.Surname = "Doe";
-p.Address = "Rr Durresit";
-p.Phone = "123456789";
 
 
-Person p1 = new Person();
-p1.Age = 20;
-p1.Name = "Johna";
-p1.Surname = "Doea";
-p1.Address = "Rr Durresita";
-p1.Phone = "123456789a";
+//List<Person> listOfPersons = new List<Person>();
+////listOfPersons.Add(p);
 
-Person p2 = new Person();
-p2.Age = 30;
-p2.Name = "Johnb";
-p2.Surname = "Doeb";
-p2.Address = "Rr Durresitb";
-p2.Phone = "123456789b";
+//PersonHelper.KthePersoninMeTeMadh(listOfPersons);
+/////person
+//PersonHelper.GjejMoshenMesatare(listOfPersons);
+//PersonHelper.RenditPersonatSipasMoshes(listOfPersons);
 
 
-PersonHelper helperMethods = new PersonHelper();
 
-List<Person> listOfPersons = new List<Person>();
-listOfPersons.Add(p);
-listOfPersons.Add(p2);
-listOfPersons.Add(p1);
 
-helperMethods.KthePersoninMeTeMadh(listOfPersons);
-///person
+Teacher t =  new Teacher("Matematike", "John", "Doe", "Rr Durresit", "09876545678", 31);
 
-helperMethods.GjejMoshenMesatare(listOfPersons);
-helperMethods.RenditPersonatSipasMoshes(listOfPersons); 
+
+Student s =  new Student();
+s.Name = "dfgh";
+
+
+
+FunksioneMeLista.ListOfMultiples(23, 4);
+
+FunksioneMeLista.FindLettersInString("G2r8d90e2");
