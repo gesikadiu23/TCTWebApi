@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace CsharpBasis.Helpers
 {
-    internal class PersonHelper
+    internal abstract class PersonHelper
     {
         /// <summary>
         /// Merr si input Nje liste me persona
         /// </summary>
         /// <param name="persons"></param>
         /// <returns>Personat e renditur sipas moshes, emrit, mbiemrit, adreses</returns>
-        public List<Person> RenditPersonatSipasMoshes(List<Person> persons)
+        public static List<Person> RenditPersonatSipasMoshes(List<Person> persons)
         {
             return persons.OrderBy(a => a.Age).ThenBy(b => b.Name).ThenBy(b => b.Surname).ToList();
         }
@@ -24,7 +24,7 @@ namespace CsharpBasis.Helpers
         /// </summary>
         /// <param name="persons"></param>
         /// <returns>Kthen moshen mesatare te personave</returns>
-        public double GjejMoshenMesatare(List<Person> persons)
+        public static double GjejMoshenMesatare(List<Person> persons)
         {
             return persons.Average(a => a.Age);
         }
@@ -35,7 +35,7 @@ namespace CsharpBasis.Helpers
         /// </summary>
         /// <param name="persons"></param>
         /// <returns>Kthen personin me moshen me te madhe</returns>
-        public Person KthePersoninMeTeMadh(List<Person> persons)
+        public static Person KthePersoninMeTeMadh(List<Person> persons)
         {
             return persons.MaxBy(a => a.Age);
         }
